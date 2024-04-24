@@ -64,6 +64,7 @@ public class ReportAction extends ActionBase {
         //一覧画面を表示
         forward(ForwardConst.FW_REP_INDEX);
     }
+
     
     /**
      * 新規登録画面を表示する
@@ -139,7 +140,7 @@ public class ReportAction extends ActionBase {
             }
         }
     }
-  //セッションからログイン中の従業員情報を取得
+/*  //セッションからログイン中の従業員情報を取得
     EmployeeView ev = (EmployeeView) getSessionScope(AttributeConst.LOGIN_EMP);
 
     private LocalDate day;
@@ -152,7 +153,7 @@ public class ReportAction extends ActionBase {
             getRequestParam(AttributeConst.REP_TITLE),
             getRequestParam(AttributeConst.REP_CONTENT),
             null,
-            null);
+            null); */
     /**
      * 詳細画面を表示する
      * @throws ServletException
@@ -246,7 +247,6 @@ public class ReportAction extends ActionBase {
             }
         }
     }
-
 
 
 }
